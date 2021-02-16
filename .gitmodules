@@ -1,0 +1,3 @@
+[submodule "oxide/external/glfw"]
+	path = oxide/external/glfw
+	url = https://github.com/glfw/glfw.git
