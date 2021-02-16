@@ -1,0 +1,47 @@
+{
+  "oxide": 
+  {
+    "resources_directory": "resources/",
+
+    "Shaders": [
+      {
+        "name": "main",
+
+        "vertex_shader_path": "shaders/main/main.vert",
+        "fragment_shader_path": "shaders/main/main.frag"
+      },
+      {
+        "name": "example_3d",
+
+        "vertex_shader_path": "shaders/example_3d/example_3d.vert",
+        "fragment_shader_path": "shaders/example_3d/example_3d.frag"
+      },
+      {
+        "name": "button",
+
+        "vertex_shader_path": "shaders/button/button.vert",
+        "fragment_shader_path": "shaders/button/button.frag"
+      }
+    ],
+
+    "Textures": [
+      {
+        "name": "t",
+
+        "sub_textures_info": {
+
+          "width": 13,
+          "height": 14,
+
+          "names": [
+
+
+          ]
+        }
+
+        "path": "textures/d.png"
+      }
+    ]
+
+  }
+}
