@@ -13,6 +13,8 @@ namespace oxide {
 
 	public:
 		
+		static bool pre_initialize();
+
 		static bool initialize(const char* title, const int width, const int height);
 
 		static bool isShouldClose();

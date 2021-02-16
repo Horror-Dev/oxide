@@ -14,6 +14,10 @@ int main() {
 
 	logger->setLogOutPutFile("log.txt");
 
+	oxide::Window::pre_initialize();
+
+	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
+
 	oxide::Window::initialize("oxide", 1280, 640);
 	oxide::Events::init();
 	

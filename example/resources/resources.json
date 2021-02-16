@@ -28,17 +28,6 @@
       {
         "name": "t",
 
-        "sub_textures_info": {
-
-          "width": 13,
-          "height": 14,
-
-          "names": [
-
-
-          ]
-        }
-
         "path": "textures/d.png"
       }
     ]

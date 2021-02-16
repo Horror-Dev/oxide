@@ -31,6 +31,18 @@ void oxide::Window::setShouldClose(int value){
 	glfwSetWindowShouldClose(window, value);
 }
 
+bool oxide::Window::pre_initialize(){
+	oxide::Engine::Logger* logger = oxide::Engine::getLastInstance()->getLogger();
+
+	if (!glfwInit()) {
+		*logger << "Cannot initalize GLFW!" << "\n";
+		logger->add_log(oxide::Engine::Logger::log_type::lt_error);
+		return false;
+	}
+
+	return true;
+}
+
 bool oxide::Window::initialize(const char* title, const int width, const int height){
 	oxide::Window::width = width;
 	oxide::Window::height = height;
@@ -39,11 +51,6 @@ bool oxide::Window::initialize(const char* title, const int width, const int hei
 
 	oxide::Engine::Logger* logger = oxide::Engine::getLastInstance()->getLogger();
 	
-	if (!glfwInit()) {
-		*logger << "Cannot initalize GLFW!" << "\n";
-		logger->add_log(oxide::Engine::Logger::log_type::lt_error);
-		return false;
-	}
 
 	window = glfwCreateWindow(width, height, title, NULL, NULL);
 

@@ -4,4 +4,3 @@ project("oxide")
 
 add_subdirectory("oxide")
 add_subdirectory("example")
-add_subdirectory("test")
